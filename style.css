@@ -4,13 +4,35 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.new-grid {
+    background-color: grey;
+    padding: 5px;
+    margin-top: 15px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.new-grid:hover {
+    background-color: darkgrey; /* Change background color on hover */
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(16, 1fr );
     grid-template-rows: repeat(16, 1fr);
     width: 500px;
     height: 500px;
-    margin: 20px auto;
+    margin: 30px auto;
     border: 1px solid black;
 }
 
