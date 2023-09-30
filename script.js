@@ -7,6 +7,10 @@ function createGrid (rows, cols){
         let gridItem = document.createElement('div');
         gridItem.classList.add('grid-item');
         gridContainer.appendChild(gridItem);
+
+        gridItem.addEventListener('mouseenter', function(){
+            gridItem.style.backgroundColor = 'black';
+        })
     }
 }
 
